@@ -68,7 +68,7 @@ new knife_welcome_spawn_menu[MAXPLAYERS+1];
 public Plugin:myinfo =
 {
 	name = PLUGIN_NAME,
-	author = "Klexen",
+	author = "Klexen advanced by Kento",
 	description = "Choose and a save custom knife skin for this server.",
 	version = PLUGIN_VERSION
 }
