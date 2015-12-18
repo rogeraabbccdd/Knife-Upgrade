@@ -1,0 +1,215 @@
+//**********************************************  Valid Colors	***********************************************
+// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}  *
+//*************************************************************************************************************
+
+"Phrases"
+{
+	"Command Access Denied Message"
+	{		
+		"zho"		"{RED}You do not have access to this command."
+	}
+
+	"Knife Menu Disabled Message"
+	{		
+		"zho"		"{RED}The Knife Menu has been disabled. Try using the {RED}!knifesname {NORMAL}chat triggers."
+	}
+
+	"Knife Access Denied Message"
+	{		
+		"zho"		"{RED}You do not have access to this knife."
+	}
+	
+	"No Longer Has Access to Current Knife"
+	{
+		"zho"		"{RED}You no longer have access to your previously selected knife." 
+	}
+	
+	"Spawn and Welcome Message"
+	{		
+		"zho"		"{GREEN}[Knife]{NORMAL}輸入 {RED}!knife {NORMAL}或 {RED}指令 {NORMAL}選擇刀子種類."
+	}
+
+	"Chat Triggers Message"
+	{		
+		"zho"		"{GREEN}[Knife]{NORMAL}刀子指令: {DARKRED}!bayonet {PINK}!gut {GREEN}!flip {RED}!m9 {GRAY}!karambit {DARKBLUE}!huntsman {PURPLE}!butterfly {YELLOW}!falchion {BLUE}!default {LIGHTGREEN}!golden {DARKRED}!shadow"
+	}
+
+	"Bayonet Given Message"
+	{		
+		"zho"		"{GREEN}[Knife]{DARKRED}你選擇了刺刀!"
+	}
+
+	"Gut Given Message"
+	{		
+		"zho"		"{GREEN}[Knife]{PINK}你選擇了穿腸刀!"
+	}
+
+	"Flip Given Message"
+	{		
+		"zho"		"{GREEN}[Knife]{GREEN}你選擇了折疊式軍刀!"
+	}
+
+	"M9 Given Message"
+	{		
+		"zho"		"{GREEN}[Knife]{RED}你選擇了M9刺刀!"
+	}
+
+	"Karambit Given Message"
+	{		
+		"zho"		"{GREEN}[Knife]{GRAY}你選擇了爪刀!"
+	}
+
+	"Huntsman Given Message"
+	{		
+		"zho"		"{GREEN}[Knife]{DARKBLUE}你選擇了獵刀!"
+	}
+
+	"Butterfly Given Message"
+	{		
+		"zho"		"{GREEN}[Knife]{PURPLE}你選擇了蝴蝶刀!"
+	}
+
+	"Default Given Message"
+	{		
+		"zho"		"{GREEN}[Knife]{BLUE}你選擇了預設軍刀!"
+	}
+
+	"Golden Given Message"
+	{		
+		"zho"		"{GREEN}[Knife]{YELLOW}你選擇了黃金軍刀!"
+	}
+
+	"Falchion Given Message"
+	{		
+		"zho"		"{GREEN}[Knife]{YELLOW}你選擇了彎刃匕首!"
+	}
+	
+	"Push Given Message"
+	{		
+		"zho"		"{GREEN}[Knife]{YELLOW}你選擇了Shadow Daggers!"
+	}
+//****************************************************   WARNING   *******************************************************
+//********************************************   NO COLORS  BELOW THIS LINE   ********************************************
+	
+	"Knife Menu Command"
+	{		
+		"zho"		"sm_knife"
+	}
+	
+	"Knife Menu Title"
+	{		
+		"zho"		"選擇刀子種類."
+	}
+
+	"Menu Knife Bayonet"
+	{		
+		"zho"		"刺刀"
+	}
+	
+	"Menu Knife Gut"
+	{		
+		"zho"		"穿腸刀"
+	}
+	
+	"Menu Knife Flip"
+	{		
+		"zho"		"折疊式軍刀"
+	}
+	
+	"Menu Knife M9"
+	{		
+		"zho"		"M9刺刀"
+	}
+	
+	"Menu Knife Karambit"
+	{		
+		"zho"		"爪刀"
+	}
+	
+	"Menu Knife Huntsman"
+	{		
+		"zho"		"獵刀"
+	}
+	
+	"Menu Knife Butterfly"
+	{		
+		"zho"		"蝴蝶刀"
+	}
+	
+	"Menu Knife Default"
+	{		
+		"zho"		"預設軍刀"
+	}
+	
+	"Menu Knife Golden"
+	{		
+		"zho"		"黃金軍刀"
+	}
+
+	"Menu Knife Falchion"
+	{		
+		"zho"		"彎刃匕首"
+	}
+	
+	"Menu Knife Push"
+	{		
+		"zho"		"Shadow Daggers"
+	}
+	
+//****************************  CHAT TRIGGER COMMANDS. (Not Case Sensitive)   *********************
+
+	"Knife Trigger Bayonet"
+	{		
+		"zho"		"!Bayonet"
+	}
+	
+	"Knife Trigger Gut"
+	{		
+		"zho"		"!Gut"
+	}
+	
+	"Knife Trigger Flip"
+	{		
+		"zho"		"!Flip"
+	}
+	
+	"Knife Trigger M9"
+	{		
+		"zho"		"!M9"
+	}
+	
+	"Knife Trigger Karambit"
+	{		
+		"zho"		"!Karambit"
+	}
+	
+	"Knife Trigger Huntsman"
+	{		
+		"zho"		"!Huntsman"
+	}
+	
+	"Knife Trigger Butterfly"
+	{		
+		"zho"		"!Butterfly"
+	}
+	
+	"Knife Trigger Default"
+	{		
+		"zho"		"!Default"
+	}
+	
+	"Knife Trigger Golden"
+	{		
+		"zho"		"!Golden"
+	}
+
+	"Knife Trigger Falchion"
+	{		
+		"zho"		"!Falchion"
+	}
+	
+	"Knife Trigger Push"
+	{		
+		"zho"		"!Shadow"
+	}
+}
