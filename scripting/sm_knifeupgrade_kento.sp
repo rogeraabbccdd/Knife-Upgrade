@@ -8,10 +8,10 @@
 #undef REQUIRE_PLUGIN
 #pragma semicolon 1
 
-#define PLUGIN_VERSION "2.5.8"
+#define PLUGIN_VERSION "2.5.9"
 #define PLUGIN_NAME "Knife Upgrade advanced by Kento"
 
-#define MAX_KNIVES 11
+#define MAX_KNIVES 99
 #define GOLDEN_KNIFE 10
 
 new Handle:g_cookieKnife;
@@ -68,7 +68,7 @@ new knife_welcome_spawn_menu[MAXPLAYERS+1];
 public Plugin:myinfo =
 {
 	name = PLUGIN_NAME,
-	author = "Klexen advanced by Kento",
+	author = "Klexen",
 	description = "Choose and a save custom knife skin for this server.",
 	version = PLUGIN_VERSION
 }
@@ -505,6 +505,21 @@ public Action:Event_Say(client, const String:command[], arg)
 			}
 			return Plugin_Handled;
 		}
+		//Bowie
+		decl String:Bowie[32];
+		Format(Bowie, sizeof(Bowie), "%t", "Knife Trigger Bowie");
+		if (StrEqual(text, Bowie, false))
+		{
+			if (IsValidClient(client))
+			{
+				if (HasPluginAccess(client)) {
+					SetBowie(client);
+				} else {
+					CPrintToChat(client, "%t","Command Access Denied Message");
+				}
+			}
+			return Plugin_Handled;
+		}
 	}
 	return Plugin_Continue;
 }
@@ -648,6 +663,10 @@ public Action:Equipknife(client)
 			knife_choice[client] = 0;
 			CPrintToChat(client, "%t","No Longer Has Access to Current Knife");
 		}
+		if (!CheckCommandAccess(client, "sm_knifeupgrade_bowie", 0, true) && knife_choice[client] == 12) {
+			knife_choice[client] = 0;
+			CPrintToChat(client, "%t","No Longer Has Access to Current Knife");
+		}
 		
 	}
 	new iItem;
@@ -664,6 +683,7 @@ public Action:Equipknife(client)
 		case 9:iItem = GivePlayerItem(client, "weapon_knife_falchion");
 		case 10:iItem = GivePlayerItem(client, "weapon_knifegg");
 		case 11:iItem = GivePlayerItem(client, "weapon_knife_push");
+		case 12:iItem = GivePlayerItem(client, "weapon_knife_survival_bowie");
 		default: return;
 	}
 	if (iItem > 0) 
@@ -830,6 +850,21 @@ SetPush(client)
 	}
 }
 
+SetBowie(client)
+{
+	if (knife_choice[client] == 12) return;
+	if (CheckCommandAccess(client, "sm_knifeupgrade_bowie", 0, true))
+	{
+		knife_choice[client] = 12;
+		SetClientCookie(client, g_cookieKnife, "12");
+		CreateTimer(g_fDelayedEquipTimer, CheckKnife, GetClientSerial(client), TIMER_FLAG_NO_MAPCHANGE);
+		if (g_bKnifeChosenMessage)
+			CPrintToChat(client, "%t","Bowie Given Message");
+	} else {
+		CPrintToChat(client, "%t", "Knife Access Denied Message");
+	}
+}
+
 public Action:KnifeMenu(Handle:timer, any:serial)
 {
 	new client = GetClientFromSerial(serial);
@@ -862,6 +897,7 @@ public Action:ShowKnifeMenu(client)
 	decl String:Golden[32];
 	decl String:Default[32];
 	decl String:Push[32];
+	decl String:Bowie[32];
 	
 	Format(Bayonet, sizeof(Bayonet), "%t", "Menu Knife Bayonet");
 	Format(Gut, sizeof(Gut), "%t", "Menu Knife Gut");
@@ -874,6 +910,7 @@ public Action:ShowKnifeMenu(client)
 	Format(Golden, sizeof(Golden), "%t", "Menu Knife Golden");
 	Format(Default, sizeof(Default), "%t", "Menu Knife Default");
 	Format(Push, sizeof(Default), "%t", "Menu Knife Push");
+	Format(Bowie, sizeof(Default), "%t", "Menu Knife Bowie");
 	
 	new Handle:menu = CreateMenu(ShowKnifeMenuHandler);
 	SetMenuTitle(menu, "%t", "Knife Menu Title");
@@ -941,6 +978,13 @@ public Action:ShowKnifeMenu(client)
 		if(!g_bHideRestricted)
 			AddMenuItem(menu, "option12", Push,ITEMDRAW_DISABLED);
 	}
+	//Bowie
+	if (CheckCommandAccess(client, "sm_knifeupgrade_bowie", 0, true)) {
+		AddMenuItem(menu, "option13", Bowie);
+	} else {
+		if(!g_bHideRestricted)
+			AddMenuItem(menu, "option13", Bowie,ITEMDRAW_DISABLED);
+	}
 	//Golden
 	if (CheckCommandAccess(client, "sm_knifeupgrade_golden", 0, true) && g_bEnableGoldenKnife) {
 		AddMenuItem(menu, "option10", Golden);
@@ -988,6 +1032,8 @@ public ShowKnifeMenuHandler(Handle:menu, MenuAction:action, client, itemNum)
 			else if (strcmp(info,"option11") == 0) SetDefault(client);
 			//Push
 			else if (strcmp(info,"option12") == 0) SetPush(client);
+			//Bowie
+			else if (strcmp(info,"option13") == 0) SetBowie(client);
 		}
 		case MenuAction_End:{CloseHandle(menu);}
 	}
