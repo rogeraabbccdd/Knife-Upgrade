@@ -6,22 +6,22 @@
 {
 	"Command Access Denied Message"
 	{		
-		"zho"		"{RED}You do not have access to this command."
+		"zho"		"{GREEN}[Knife]{RED}你沒有使用這個指令的權限."
 	}
 
 	"Knife Menu Disabled Message"
 	{		
-		"zho"		"{RED}The Knife Menu has been disabled. Try using the {RED}!knifesname {NORMAL}chat triggers."
+		"zho"		"{GREEN}[Knife]{RED}刀子選單已停用. 請直接輸入刀子指令."
 	}
 
 	"Knife Access Denied Message"
 	{		
-		"zho"		"{RED}You do not have access to this knife."
+		"zho"		"{GREEN}[Knife]{RED}你沒有使用這個刀子的權限."
 	}
 	
 	"No Longer Has Access to Current Knife"
 	{
-		"zho"		"{RED}You no longer have access to your previously selected knife." 
+		"zho"		"{GREEN}[Knife]{RED}You no longer have access to your previously selected knife." 
 	}
 	
 	"Spawn and Welcome Message"
@@ -86,7 +86,7 @@
 	
 	"Push Given Message"
 	{		
-		"zho"		"{GREEN}[Knife]{DARKRED}你選擇了Shadow Daggers!"
+		"zho"		"{GREEN}[Knife]{DARKRED}你選擇了暗影匕首!"
 	}
 	
 	"Bowie Given Message"
@@ -158,7 +158,7 @@
 	
 	"Menu Knife Push"
 	{		
-		"zho"		"Shadow Daggers"
+		"zho"		"暗影匕首"
 	}
 		
 	"Menu Knife Bowie"
