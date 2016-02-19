@@ -76,7 +76,7 @@
 
 	"Golden Given Message"
 	{		
-		"zho"		"{GREEN}[Knife]{YELLOW}你選擇了黃金軍刀!"
+		"zho"		"{GREEN}[Knife]{LIGHTGREEN}你選擇了黃金軍刀!"
 	}
 
 	"Falchion Given Message"
@@ -86,12 +86,12 @@
 	
 	"Push Given Message"
 	{		
-		"zho"		"{GREEN}[Knife]{YELLOW}你選擇了Shadow Daggers!"
+		"zho"		"{GREEN}[Knife]{DARKRED}你選擇了Shadow Daggers!"
 	}
 	
 	"Bowie Given Message"
 	{		
-		"zho"		"{GREEN}[Knife]{YELLOW}你選擇了Bowie Knife!"
+		"zho"		"{GREEN}[Knife]{PINK}你選擇了Bowie Knife!"
 	}
 //****************************************************   WARNING   *******************************************************
 //********************************************   NO COLORS  BELOW THIS LINE   ********************************************
