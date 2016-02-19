@@ -1,4 +1,4 @@
-﻿//**********************************************  Valid Colors	***********************************************
+//**********************************************  Valid Colors	***********************************************
 // {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}  *
 //*************************************************************************************************************
 
@@ -155,6 +155,16 @@
 		"en"		"!Falchion"
 	}
 	
+	"Menu Knife Push"
+	{		
+		"zho"		"Shadow Daggers"
+	}
+		
+	"Menu Knife Bowie"
+	{		
+		"zho"		"Bowie Knife"
+	}
+	
 //****************************  CHAT TRIGGER COMMANDS. (Not Case Sensitive)   *********************
 
 	"Knife Trigger Bayonet"
@@ -205,5 +215,14 @@
 	"Knife Trigger Falchion"
 	{		
 		"en"		"!Falchion"
+	}
+		"Knife Trigger Push"
+	{		
+		"zho"		"!Shadow"
+	}
+	
+	"Knife Trigger Bowie"
+	{		
+		"zho"		"!Bowie"
 	}
 }
