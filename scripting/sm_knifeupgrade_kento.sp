@@ -909,8 +909,8 @@ public Action:ShowKnifeMenu(client)
 	Format(Falchion, sizeof(Falchion), "%t", "Menu Knife Falchion");
 	Format(Golden, sizeof(Golden), "%t", "Menu Knife Golden");
 	Format(Default, sizeof(Default), "%t", "Menu Knife Default");
-	Format(Push, sizeof(Default), "%t", "Menu Knife Push");
-	Format(Bowie, sizeof(Default), "%t", "Menu Knife Bowie");
+	Format(Push, sizeof(Push), "%t", "Menu Knife Push");
+	Format(Bowie, sizeof(Bowie), "%t", "Menu Knife Bowie");
 	
 	new Handle:menu = CreateMenu(ShowKnifeMenuHandler);
 	SetMenuTitle(menu, "%t", "Knife Menu Title");
