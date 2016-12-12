@@ -8,14 +8,14 @@
  *
  */
 #include <sourcemod>
-#define MAX_WEAPONS 48
+#define MAX_WEAPONS 55
 
 stock Client_RemoveAllWeapons(client)
 {
 	new offset = Client_GetWeaponsOffset(client) - 4;
 
 	new numWeaponsRemoved = 0;
-	for (new i=0; i < 32; i++) {
+	for (new i=0; i < 39; i++) {
 		offset += 4;
 
 		new weapon = GetEntDataEnt2(client, offset);
@@ -36,7 +36,7 @@ stock bool:Client_RemoveWeaponKnife(client,const String:className[],  bool:first
 {
 	new offset = Client_GetWeaponsOffset(client) - 4;
 
-	for (new i=0; i < 32; i++) {
+	for (new i=0; i < 39; i++) {
 		offset += 4;
 		
 		new weapon = GetEntDataEnt2(client, offset);
@@ -64,7 +64,7 @@ stock bool:Client_HasWeaponKnife(client,const String:className[],  bool:firstOnl
 {
 	new offset = Client_GetWeaponsOffset(client) - 4;
 
-	for (new i=0; i < 32; i++) {
+	for (new i=0; i < 39; i++) {
 		offset += 4;
 		
 		new weapon = GetEntDataEnt2(client, offset);

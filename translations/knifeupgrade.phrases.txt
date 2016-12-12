@@ -1,6 +1,10 @@
-//**********************************************  Valid Colors	***********************************************
-// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}  *
-//*************************************************************************************************************
+//**********************************************  Valid Colors	********************************************************
+// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}, {ORANGE} *
+//**********************************************************************************************************************
+//                                     http://i.imgur.com/q2wb8Cu.png                                                  *
+//{NORMAL} = x01 | {DARKRED} = x02 | {PINK} = x03 | {GREEN} = x04 | {YELLOW} = x09 | {LIGHTGREEN} = x06 | {RED} = x07  *
+//{GRAY} = x08 | {BLUE} = x0B | {DARKBLUE} = x0C | {PURPLE} = x0E|  {ORANGE} = x10                                     *
+//**********************************************************************************************************************
 
 "Phrases"
 {
@@ -31,7 +35,7 @@
 
 	"Chat Triggers Message"
 	{		
-		"en"		"Triggers: {DARKRED}!bayonet {PINK}!gut {GREEN}!flip {RED}!m9 {GRAY}!karambit {DARKBLUE}!huntsman {PURPLE}!butterfly {YELLOW}!falchion {BLUE}!default {LIGHTGREEN}!golden {DARKRED}!shadow {PINK}!bowie""
+		"en"		"Triggers: {DARKRED}!bayonet {PINK}!gut {GREEN}!flip {RED}!m9 {GRAY}!karambit {DARKBLUE}!huntsman {PURPLE}!butterfly {YELLOW}!falchion {BLUE}!default {LIGHTGREEN}!golden {DARKRED}!shadow {PINK}!bowie"
 	}
 
 	"Bayonet Given Message"
@@ -107,52 +111,52 @@
 
 	"Menu Knife Bayonet"
 	{		
-		"en"		"!Bayonet"
+		"en"		"Bayonet"
 	}
 	
 	"Menu Knife Gut"
 	{		
-		"en"		"!Gut"
+		"en"		"Gut"
 	}
 	
 	"Menu Knife Flip"
 	{		
-		"en"		"!Flip"
+		"en"		"Flip"
 	}
 	
 	"Menu Knife M9"
 	{		
-		"en"		"!M9"
+		"en"		"M9"
 	}
 	
 	"Menu Knife Karambit"
 	{		
-		"en"		"!Karambit"
+		"en"		"Karambit"
 	}
 	
 	"Menu Knife Huntsman"
 	{		
-		"en"		"!Huntsman"
+		"en"		"Huntsman"
 	}
 	
 	"Menu Knife Butterfly"
 	{		
-		"en"		"!Butterfly"
+		"en"		"Butterfly"
 	}
 	
 	"Menu Knife Default"
 	{		
-		"en"		"!Default"
+		"en"		"Default"
 	}
 	
 	"Menu Knife Golden"
 	{		
-		"en"		"!Golden"
+		"en"		"Golden"
 	}
 
 	"Menu Knife Falchion"
 	{		
-		"en"		"!Falchion"
+		"en"		"Falchion"
 	}
 	
 	"Menu Knife Push"
@@ -216,7 +220,8 @@
 	{		
 		"en"		"!Falchion"
 	}
-		"Knife Trigger Push"
+	
+	"Knife Trigger Push"
 	{		
 		"zho"		"!Shadow"
 	}
