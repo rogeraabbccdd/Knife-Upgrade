@@ -89,12 +89,12 @@
 	}
 	"Push Given Message"
 	{		
-		"zho"		"{DARKRED}You have chosen the Shadow Daggers!"
+		"en"		"{DARKRED}You have chosen the Shadow Daggers!"
 	}
 	
 	"Bowie Given Message"
 	{		
-		"zho"		"{PINK}You have chosen the Bowie Knife!"
+		"en"		"{PINK}You have chosen the Bowie Knife!"
 	}
 //****************************************************   WARNING   *******************************************************
 //********************************************   NO COLORS  BELOW THIS LINE   ********************************************
@@ -161,12 +161,12 @@
 	
 	"Menu Knife Push"
 	{		
-		"zho"		"Shadow Daggers"
+		"en"		"Shadow Daggers"
 	}
 		
 	"Menu Knife Bowie"
 	{		
-		"zho"		"Bowie Knife"
+		"en"		"Bowie Knife"
 	}
 	
 //****************************  CHAT TRIGGER COMMANDS. (Not Case Sensitive)   *********************
@@ -223,11 +223,11 @@
 	
 	"Knife Trigger Push"
 	{		
-		"zho"		"!Shadow"
+		"en"		"!Shadow"
 	}
 	
 	"Knife Trigger Bowie"
 	{		
-		"zho"		"!Bowie"
+		"en"		"!Bowie"
 	}
 }
